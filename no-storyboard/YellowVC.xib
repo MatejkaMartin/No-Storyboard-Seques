@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="YellowVC" customModule="no_storyboard" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="Rfx-Pm-62H" id="dTd-lo-qPT"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="Rfx-Pm-62H">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mC3-hK-xn1">
+                    <rect key="frame" x="131" y="318" width="112" height="30"/>
+                    <state key="normal" title="Jdi na modrou"/>
+                    <connections>
+                        <action selector="loadBlue:" destination="-1" eventType="touchUpInside" id="aAs-Pe-pkq"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="0.97636425693750151" blue="0.74137648957763358" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="mC3-hK-xn1" firstAttribute="centerY" secondItem="Rfx-Pm-62H" secondAttribute="centerY" id="SG1-V0-6oT"/>
+                <constraint firstItem="mC3-hK-xn1" firstAttribute="centerX" secondItem="Rfx-Pm-62H" secondAttribute="centerX" id="zgC-HH-Qn8"/>
+            </constraints>
+            <point key="canvasLocation" x="456.5" y="405.5"/>
+        </view>
+    </objects>
+</document>

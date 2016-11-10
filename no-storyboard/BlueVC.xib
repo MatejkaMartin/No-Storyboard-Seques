@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BlueVC" customModule="no_storyboard" customModuleProvider="target">
+            <connections>
+                <outlet property="printedTxt" destination="Unl-dA-UA2" id="hxq-LV-pBH"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="F4o-oQ-NpE"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UmY-po-p2h">
+                    <rect key="frame" x="230" y="8" width="141" height="34"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="34" id="xqU-fy-jld"/>
+                        <constraint firstAttribute="width" constant="141" id="zcd-sO-0fv"/>
+                    </constraints>
+                    <state key="normal" title="Jdi na červenou"/>
+                    <connections>
+                        <action selector="loadRed:" destination="-1" eventType="touchUpInside" id="uoT-Rj-lwq"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="osy-db-yzK">
+                    <rect key="frame" x="8" y="8" width="46" height="30"/>
+                    <state key="normal" title="Zpět"/>
+                    <connections>
+                        <action selector="back:" destination="-1" eventType="touchUpInside" id="7vy-OM-wsc"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Unl-dA-UA2">
+                    <rect key="frame" x="125" y="311" width="124" height="44"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.41967328753403799" green="0.54677962168293626" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Unl-dA-UA2" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="1kp-sP-Ijg"/>
+                <constraint firstItem="UmY-po-p2h" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="20" id="4tp-ld-tjg"/>
+                <constraint firstItem="Unl-dA-UA2" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="XaG-eA-eUk"/>
+                <constraint firstItem="UmY-po-p2h" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Ynh-Yn-g8Z"/>
+                <constraint firstItem="osy-db-yzK" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="bgs-DE-le2"/>
+                <constraint firstItem="osy-db-yzK" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="8" id="nK6-xV-NbY"/>
+            </constraints>
+        </view>
+        <barButtonItem title="Item" id="aFX-bu-LO2"/>
+    </objects>
+</document>
